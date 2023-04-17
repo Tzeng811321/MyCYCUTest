@@ -6,11 +6,14 @@ int f(int x, int y) {
     count++;  // 每次呼叫 f 函數時增加計數器 count 的值
     if (x < 0) {
         return f(y, -x);
-    } else if (x > y) {
+    } 
+    else if (x > y) {
         return f(y, x);
-    } else if (x == 0) {
+    } 
+    else if (x == 0) {
         return y;
-    } else {
+    } 
+    else {
         return f(y % x, x);
     }
 }
